@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155588364-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155588364-1');
+</script>
+
+
+	<title>Ashley Cosplay</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Ashley Cosplay">
+	<meta name="keywords" content="endGam,gGaming, magazine, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Top right elements -->
+	<!-- Top right elements end -->
+
+	<div class="main-warp">
+		<!-- header section -->
+		<header class="header-section">
+			<div class="header-close">
+				<i class="fa fa-times"></i>
+			</div>
+			<div class="header-warp">
+				<a href="" class="site-logo">
+					<img src="./img/logo.png" alt="">
+				</a>
+				<img src="img/menu-icon.png" alt="" class="menu-icon">
+				<ul class="main-menu">
+					<li><a href="./index.html">About me</a></li>
+          <li><a href="./cosplay_gallery.html">Cosplays Gallery</a></li>
+          <li class="active"><a href="./cosplay_gallery_nsfw.html">NSFW Cosplays Gallery</a></li>
+          <li><a href="./others_gallery.html">Other pictures</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+					<li><a href="./support.html">Support me</a></li>
+				</ul>
+				<div class="social-links-warp">
+					<div class="social-links">
+						<a href="https://www.twitter.com/ashley_cosplays"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.reddit.com/user/hentaitrapgirl"><i class="fa fa-reddit"></i></a>
+					</div>
+					<div class="social-text">Find me on</div>
+				</div>
+			</div>
+			<div class="copyright">Ashley Cosplays 2019  @ All rights reserved</div>
+		</header>
+		<!-- header section end -->
+
+		<!-- Page section -->
+		<div class="page-section gallery-page">
+      <ul class="portfolio-filter">
+				<li class="filter all active" data-filter="*">All</li>
+				<li class="filter" data-filter=".dva">D.va</li>
+				<li class="filter" data-filter=".bowsette">Bowsette</li>
+				<li class="filter" data-filter=".leather">Black Leather</li>
+				<li class="filter" data-filter=".poison">Poison</li>
+				<li class="filter" data-filter=".pilot_ashley">Pilot Ashley</li>
+				<li class="filter" data-filter=".summer_kitty">Summer Kitty</li>
+			</ul>
+
+			<div class="portfolio-gallery" id="thegallery">
+
+
+      <!--insert here -->
+
+
+			</div>
+
+		</div>
+		<!-- Page section end-->
+	</div>
+
+	<!-- Search model -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">x</div>
+			<form class="search-moderl-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
+
+
+  <script>
+      var sets = ["dva", "bowsette","leather", "pilot_ashley", "poison", "summer_kitty"];
+      var setsize = [26, 17, 30, 28, 37, 29]
+      var i=0;
+      var gallery = document.getElementById('thegallery');
+      while(sets[i])
+      {
+        for(j=1; j<setsize[i]+1; j++)
+        {
+          var imgdiv = document.createElement('div');
+          imgdiv.className="gallery-item " + sets[i];
+          var img = document.createElement('img');
+          img.src="img/nsfw/" + sets[i] + "/ (" + j.toString() + ").jpg";
+          imgdiv.appendChild(img);
+          gallery.appendChild(imgdiv);
+        }
+        i++;
+      }
+  </script>
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+	</body>
+</html>
