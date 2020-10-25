@@ -409,7 +409,7 @@ ol {
 }
 
 .main-menu li.active a {
-	border-bottom: 2px solid  #ff338d;
+	border-bottom: 2px solid  #ff006a;
 }
 
 .contact a {
@@ -796,7 +796,7 @@ ol {
 
 .portfolio-filter li.active {
 	text-decoration: underline;
-	text-decoration-color:  #ff338d;
+	text-decoration-color:  #ff006a;
 	text-decoration-thickness: 3px;
 	color: #323232;
 }
