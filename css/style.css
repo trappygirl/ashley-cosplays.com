@@ -235,7 +235,7 @@ ol {
 
 .main-warp {
 	height: 100%;
-	padding-left: 455px;
+	padding-left: 350px;
 }
 
 .spacial-controls {
@@ -351,11 +351,12 @@ ol {
 
 .header-section {
 	position: fixed;
-	width: 455px;
+	width: 350px;
 	height: 100%;
 	left: 0;
 	top: 0;
 	background: 	#181818;
+	background-image: url("../img/bg-menu.png");
 	z-index: 9999;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
@@ -385,6 +386,19 @@ ol {
 	padding-left: 54px;
 	padding-top: 38px;
 	margin-bottom: 84px;
+	height: 150px;
+	width: 350px;
+	background: url("../img/logo-test.png")
+}
+
+.site-logo:hover {
+	display: block;
+	padding-left: 54px;
+	padding-top: 38px;
+	margin-bottom: 84px;
+	height: 150px;
+	width: 350px;
+	background: url("../img/litup-logo-test.png")
 }
 
 .menu-icon {
@@ -399,7 +413,7 @@ ol {
 
 .main-menu li a {
 	display: inline-block;
-	font-size: 14px;
+	font-size: 17px;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #F0F0F0;
@@ -432,7 +446,7 @@ ol {
 }
 
 .social-links a {
-	font-size: 14px;
+	font-size: 20px;
 	display: block;
 	color: #c6d7d8;
 	margin-bottom: 29px;
@@ -449,30 +463,21 @@ ol {
 	font-weight: 700;
 	color: 	#909090;
 	text-transform: uppercase;
-	width: 215px;
+	width: 100px;
 	position: relative;
-	-webkit-transform: rotate(-90deg) translateX(-200px);
-	-ms-transform: rotate(-90deg) translateX(-200px);
-	transform: rotate(-90deg) translateX(-200px);
+	-webkit-transform: rotate(-90deg) translateX(-50px);
+	-ms-transform: rotate(-90deg) translateX(-50px);
+	transform: rotate(-90deg) translateX(-50px);
 	-webkit-transform-origin: top left;
 	-ms-transform-origin: top left;
 	transform-origin: top left;
 }
 
-.social-text:after {
-	position: absolute;
-	content: "";
-	width: 101px;
-	height: 2px;
-	right: 0;
-	top: calc(50% - 1px);
-	background: 	#909090;
-}
 
 .copyright {
 	position: fixed;
 	height: 45px;
-	width: 455px;
+	width: 350px;
 	left: 0;
 	bottom: 0;
 	background: #181818;
