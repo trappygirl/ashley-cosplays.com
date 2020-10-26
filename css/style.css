@@ -172,6 +172,13 @@ ol {
 	background-image: url("../img/button-hover.png");
 }
 
+.pfp{
+	width:250px;
+	height:250px;
+	background-image: url("../img/pfp.png");
+	margin-left: auto;
+	margin-right: auto;
+}
 .site-btn.sb-light {
 	color: #fff;
 	border-color: #fff;
@@ -571,8 +578,12 @@ ol {
 
 .slider-item .si-text-box {
 	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 50px 50px 100px 50px;
 	background: #fff;
+	outline-style: dashed;
+	outline-color: #ff006a;
 }
 
 .slider-item .si-text-box span {
@@ -585,7 +596,7 @@ ol {
 
 .slider-item .si-text-box h2 {
 	margin-bottom: 30px;
-	margin-left: 40px;
+	margin-left: 0px;
 	font-size: 48px;
 }
 
