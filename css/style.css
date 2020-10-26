@@ -511,6 +511,9 @@ ol {
 	text-transform: uppercase;
 }
 
+.filter:hover {
+	color: #ff006a;
+}
 .page-section {
 	min-height: 100%;
 }
