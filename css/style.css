@@ -157,6 +157,21 @@ ol {
 	color: #323232;
 }
 
+.main-button-item{
+	display: block;
+	background-image: url("../img/button.png");
+	height: 67px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	opacity: 1;
+}
+
+.main-button-item:hover{
+	background-image: url("../img/button-hover.png");
+}
+
 .site-btn.sb-light {
 	color: #fff;
 	border-color: #fff;
@@ -556,7 +571,7 @@ ol {
 
 .slider-item .si-text-box {
 	width: 700px;
-	padding: 90px 50px 100px 0;
+	padding: 50px 50px 100px 50px;
 	background: #fff;
 }
 
@@ -575,7 +590,7 @@ ol {
 }
 
 .slider-item .si-text-box p {
-	margin-left: 80px;
+	margin-left: 40px;
 	margin-bottom: 40px;
 }
 
