@@ -127,28 +127,20 @@
     function highlight(e)
     {
     clicked = document.getElementById(e.target.id).parentElement;
-    if(clicked.classList.contains("clicked"))
-    {
       Array.from(document.getElementsByClassName("gallery-item")).forEach(
         function(element, index, array) {
-        element.style.opacity="1.0";
-      }
-      );
-      clicked.classList.remove("clicked")
-    }
-    else {
-      Array.from(document.getElementsByClassName("gallery-item")).forEach(
-        function(element, index, array) {
-        element.style.opacity="0.1";
-        if(element.classList.contains("clicked"))
-        {
-          element.classList.remove("clicked");
-        }
+        element.style.opacity="0.05";
       }
       );
       clicked.style.opacity="1.0";
-      clicked.classList.add("clicked")
-    }
+      if(!clicked.classList.contains("gallery-item"))
+      {
+        Array.from(document.getElementsByClassName("gallery-item")).forEach(
+          function(element, index, array) {
+          element.style.opacity="1.0";
+        }
+        );
+      }
     }
       var sets = ["yoko","lucoa", "tifa", "dva", "bowsette","leather", "pilot_ashley", "poison", "summer_kitty"];
       var setsize = [30, 22, 25, 23, 13, 20, 23, 32, 21]
@@ -163,7 +155,7 @@
           var img = document.createElement('img');
           img.src="img/" + sets[i] + "/ (" + j.toString() + ").jpg";
           img.id=sets[i]+j.toString();
-          img.onclick= function() {highlight(event)};
+          img.onmouseover= function() {highlight(event)};
           imgdiv.appendChild(img);
           gallery.appendChild(imgdiv);
         }
