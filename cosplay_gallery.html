@@ -124,8 +124,12 @@
 
 
   <script>
+    var highlight_on= false;
     function highlight(e)
     {
+      if(highlight_on)
+      {
+        console.log("ok")
     clicked = document.getElementById(e.target.id).parentElement;
       Array.from(document.getElementsByClassName("gallery-item")).forEach(
         function(element, index, array) {
@@ -133,14 +137,26 @@
       }
       );
       clicked.style.opacity="1.0";
-      if(!clicked.classList.contains("gallery-item"))
+      }
+    }
+
+    function switch_light(event)
+    {
+      if(highlight_on)
       {
+        console.log("off")
+        highlight_on=false;
         Array.from(document.getElementsByClassName("gallery-item")).forEach(
           function(element, index, array) {
           element.style.opacity="1.0";
         }
         );
       }
+      else {
+        highlight_on=true;
+        highlight(event);
+      }
+
     }
       var sets = ["yoko","lucoa", "tifa", "dva", "bowsette","leather", "pilot_ashley", "poison", "summer_kitty"];
       var setsize = [30, 22, 25, 23, 13, 20, 23, 32, 21]
@@ -155,7 +171,8 @@
           var img = document.createElement('img');
           img.src="img/" + sets[i] + "/ (" + j.toString() + ").jpg";
           img.id=sets[i]+j.toString();
-          img.onmouseover= function() {highlight(event)};
+          img.onmouseover= function() {highlight(event,highlight_on)};
+          img.onclick= function() {switch_light(event,highlight_on)};
           imgdiv.appendChild(img);
           gallery.appendChild(imgdiv);
         }
