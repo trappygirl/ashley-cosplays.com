@@ -759,7 +759,7 @@ ol {
 	width: 33.33%;
 	float: left;
 	position: relative;
-	color: #ff006a;
+	color: #000000;
 }
 
 .gallery-item .hover-links {
@@ -800,7 +800,7 @@ ol {
 }
 
 .gallery-item:hover {
-	opacity: 0.7;
+	opacity: 1;
 }
 
 .gallery-item:hover .site-btn {
@@ -830,7 +830,7 @@ ol {
 }
 
 .portfolio-gallery {
-	background: #ff006a;
+	background: #000000;
 }
 
 .portfolio-filter li:last-child {

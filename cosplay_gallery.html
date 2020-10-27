@@ -88,6 +88,7 @@
 		<div class="page-section gallery-page">
       <ul class="portfolio-filter">
 				<li class="filter all active" data-filter="*">All</li>
+        <li class="filter" data-filter=".yoko">Yoko Ritona</li>
         <li class="filter" data-filter=".lucoa">Lucoa</li>
         <li class="filter" data-filter=".tifa">Tifa Lockhart</li>
 				<li class="filter" data-filter=".dva">D.va</li>
@@ -123,6 +124,32 @@
 
 
   <script>
+    function highlight(e)
+    {
+    clicked = document.getElementById(e.target.id).parentElement;
+    if(clicked.classList.contains("clicked"))
+    {
+      Array.from(document.getElementsByClassName("gallery-item")).forEach(
+        function(element, index, array) {
+        element.style.opacity="1.0";
+      }
+      );
+      clicked.classList.remove("clicked")
+    }
+    else {
+      Array.from(document.getElementsByClassName("gallery-item")).forEach(
+        function(element, index, array) {
+        element.style.opacity="0.1";
+        if(element.classList.contains("clicked"))
+        {
+          element.classList.remove("clicked");
+        }
+      }
+      );
+      clicked.style.opacity="1.0";
+      clicked.classList.add("clicked")
+    }
+    }
       var sets = ["yoko","lucoa", "tifa", "dva", "bowsette","leather", "pilot_ashley", "poison", "summer_kitty"];
       var setsize = [30, 22, 25, 23, 13, 20, 23, 32, 21]
       var i=0;
@@ -135,12 +162,16 @@
           imgdiv.className="gallery-item " + sets[i];
           var img = document.createElement('img');
           img.src="img/" + sets[i] + "/ (" + j.toString() + ").jpg";
+          img.id=sets[i]+j.toString();
+          img.onclick= function() {highlight(event)};
           imgdiv.appendChild(img);
           gallery.appendChild(imgdiv);
         }
         i++;
       }
   </script>
+
+
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
