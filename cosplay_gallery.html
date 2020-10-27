@@ -104,9 +104,10 @@
 
       <!--insert here -->
 
-
 			</div>
-
+      <div class="overlay" id="overlay">
+          <img src="./img/bg-menu.png" id="overlaypic">
+      </div>
 		</div>
 		<!-- Page section end-->
 	</div>
@@ -125,6 +126,7 @@
 
   <script>
     var highlight_on= false;
+
     function highlight(e)
     {
       if(highlight_on)
@@ -134,9 +136,12 @@
       Array.from(document.getElementsByClassName("gallery-item")).forEach(
         function(element, index, array) {
         element.style.opacity="0.05";
+        element.style.width="33.33%";
       }
       );
       clicked.style.opacity="1.0";
+      clicked.style.width="50%";
+      clicked.style.border="10 px solid red";
       }
     }
 
@@ -149,6 +154,7 @@
         Array.from(document.getElementsByClassName("gallery-item")).forEach(
           function(element, index, array) {
           element.style.opacity="1.0";
+          element.style.width="33.33%";
         }
         );
       }
@@ -156,8 +162,34 @@
         highlight_on=true;
         highlight(event);
       }
-
     }
+
+    function display_picture(e)
+    {
+      Array.from(document.getElementsByClassName("gallery-item")).forEach(
+        function(element, index, array) {
+        element.style.opacity="0.1";
+        element.style.width="33.33%";
+      }
+      );
+      clicked = document.getElementById(e.target.id);
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("overlay").style.opacity = "1";
+      document.getElementById("overlaypic").src = clicked.src;
+    }
+
+    function hide()
+    {
+      Array.from(document.getElementsByClassName("gallery-item")).forEach(
+        function(element, index, array) {
+        element.style.opacity="1.0";
+        element.style.width="33.33%";
+      }
+      );
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("overlay").style.opacity = "0";
+    }
+
       var sets = ["yoko","lucoa", "tifa", "dva", "bowsette","leather", "pilot_ashley", "poison", "summer_kitty"];
       var setsize = [30, 22, 25, 23, 13, 20, 23, 32, 21]
       var i=0;
@@ -171,8 +203,8 @@
           var img = document.createElement('img');
           img.src="img/" + sets[i] + "/ (" + j.toString() + ").jpg";
           img.id=sets[i]+j.toString();
-          img.onmouseover= function() {highlight(event,highlight_on)};
-          img.onclick= function() {switch_light(event,highlight_on)};
+          img.onmouseover= function() {highlight(event)};
+          img.onclick= function() {switch_light(event)};
           imgdiv.appendChild(img);
           gallery.appendChild(imgdiv);
         }
