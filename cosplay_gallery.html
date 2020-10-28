@@ -169,7 +169,7 @@
       Array.from(document.getElementsByClassName("gallery-item")).forEach(
         function(element, index, array) {
         element.style.opacity="0.1";
-        element.style.width="33.33%";
+        element.style.width="initial";
       }
       );
       clicked = document.getElementById(e.target.id);
@@ -183,7 +183,7 @@
       Array.from(document.getElementsByClassName("gallery-item")).forEach(
         function(element, index, array) {
         element.style.opacity="1.0";
-        element.style.width="33.33%";
+        element.style.width="initial";
       }
       );
       document.getElementById("overlay").style.display = "none";
