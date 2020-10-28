@@ -136,12 +136,9 @@
       Array.from(document.getElementsByClassName("gallery-item")).forEach(
         function(element, index, array) {
         element.style.opacity="0.05";
-        element.style.width="33.33%";
       }
       );
       clicked.style.opacity="1.0";
-      clicked.style.width="50%";
-      clicked.style.border="10 px solid red";
       }
     }
 
@@ -154,7 +151,6 @@
         Array.from(document.getElementsByClassName("gallery-item")).forEach(
           function(element, index, array) {
           element.style.opacity="1.0";
-          element.style.width="33.33%";
         }
         );
       }
@@ -169,7 +165,6 @@
       Array.from(document.getElementsByClassName("gallery-item")).forEach(
         function(element, index, array) {
         element.style.opacity="0.1";
-        element.style.width="initial";
       }
       );
       clicked = document.getElementById(e.target.id);
@@ -183,7 +178,7 @@
       Array.from(document.getElementsByClassName("gallery-item")).forEach(
         function(element, index, array) {
         element.style.opacity="1.0";
-        element.style.width="initial";
+        element.style.width="33.33%";
       }
       );
       document.getElementById("overlay").style.display = "none";
