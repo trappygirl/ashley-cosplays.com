@@ -138,7 +138,7 @@ ol {
 	margin-right: auto;
 	max-width: 80%;
 	max-height: 80%;
-	border: 6px solid #ff006a;
+	border: 6px solid #ff6b00;
 	display: block;
 }
 
@@ -188,7 +188,7 @@ ol {
 
 .main-button-item{
 	display: block;
-	background-image: url("../img/button.png");
+	background-image: url("../img/button_halloween.png");
 	height: 67px;
 	width: 200px;
 	margin-left: auto;
@@ -198,13 +198,13 @@ ol {
 }
 
 .main-button-item:hover{
-	background-image: url("../img/button-hover.png");
+	background-image: url("../img/button-hover_halloween.png");
 }
 
 .pfp{
 	width:250px;
 	height:250px;
-	background-image: url("../img/pfp.png");
+	background-image: url("../img/pfp_halloween.png");
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -407,7 +407,7 @@ ol {
 	left: 0;
 	top: 0;
 	background: 	#181818;
-	background-image: url("../img/bg-menu.png");
+	background-image: url("../img/bg-menu_halloween.png");
 	z-index: 9999;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
@@ -439,7 +439,7 @@ ol {
 	margin-bottom: 84px;
 	height: 150px;
 	width: 350px;
-	background: url("../img/logo-test.png")
+	background: url("../img/logo-test_halloween.png")
 }
 
 .site-logo:hover {
@@ -449,7 +449,7 @@ ol {
 	margin-bottom: 84px;
 	height: 150px;
 	width: 350px;
-	background: url("../img/litup-logo-test.png")
+	background: url("../img/litup-logo-test_halloween.png")
 }
 
 .menu-icon {
@@ -474,8 +474,11 @@ ol {
 }
 
 .main-menu li.active a {
-	border-bottom: 2px solid  #ff006a;
+	border-bottom: 2px solid  #ff6b00;
 }
+/* #ff006a - normal
+	 #ff6b00 - halloween
+ 	*/
 
 .contact a {
 	display: inline-block;
@@ -541,7 +544,7 @@ ol {
 }
 
 .filter:hover {
-	color: #ff006a;
+	color: #ff6b00;
 }
 .page-section {
 	min-height: 100%;
@@ -613,28 +616,36 @@ ol {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 50px 50px 100px 50px;
-	background: #fff;
+	background: #181818;
 	outline-style: dashed;
-	outline-color: #ff006a;
+	outline-color: #ff6b00;
 }
+
+/* background: #fff
+Halloween : #181818*/
 
 .slider-item .si-text-box span {
 	font-size: 11px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #898d90;
+	color: #f59b42;
 	letter-spacing: 2px;
 }
+
+/* color :  #898d90;
+Halloween : #f59b42 */
 
 .slider-item .si-text-box h2 {
 	margin-bottom: 30px;
 	margin-left: 0px;
 	font-size: 48px;
+	color: #ff6b00;
 }
 
 .slider-item .si-text-box p {
 	margin-left: 40px;
 	margin-bottom: 40px;
+	color: #dddddd;
 }
 
 .next-slide-show {
@@ -845,6 +856,7 @@ ol {
 	padding: 28px 0;
 	padding-left: 63px;
 	padding-right: 130px;
+	background: #181818;
 }
 
 .portfolio-filter li {
@@ -852,11 +864,14 @@ ol {
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #898d90;
+	color: #f59b42;
 	margin-right: 65px;
 	cursor: pointer;
 	padding: 10px 0;
 }
+
+/* normal - color: #898d90;
+   halloween - color : #f59b42;*/
 
 .portfolio-gallery {
 	background: #000000;
@@ -868,10 +883,14 @@ ol {
 
 .portfolio-filter li.active {
 	text-decoration: underline;
-	text-decoration-color:  #ff006a;
+	text-decoration-color:  #dddddd;
 	text-decoration-thickness: 3px;
-	color: #323232;
+	color: #ff6b00;
 }
+
+/* normal : color: #323232;
+text-decoration-color:  #ff006a;
+Halloween : */
 
 /* --------------------
   Gallery single page
