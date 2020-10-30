@@ -291,7 +291,7 @@ ol {
 
 .spacial-controls {
 	position: fixed;
-	width: 111px;
+	width: 60px;
 	height: 91px;
 	top: 0;
 	right: 0;
@@ -320,7 +320,7 @@ ol {
 
 .nav-switch-warp {
 	display: none;
-	width: 50%;
+	width: 100%;
 	background: #fff;
 	padding-top: 17px;
 	padding-left: 15px;
@@ -1431,7 +1431,7 @@ Halloween : */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.spacial-controls {
-		width: 200px;
+		width: 100px;
 		height: 85px;
 		display: -ms-flex;
 		display: -webkit-box;
@@ -1526,7 +1526,7 @@ Halloween : */
 
 @media only screen and (max-width: 767px) {
 	.spacial-controls {
-		width: 150px;
+		width: 75px;
 		height: 65px;
 		display: -ms-flex;
 		display: -webkit-box;
