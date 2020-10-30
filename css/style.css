@@ -870,6 +870,22 @@ Halloween : #f59b42 */
 	padding: 10px 0;
 }
 
+.patreon {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ff6b00;
+	margin-right: 65px;
+	cursor: pointer;
+	padding: 10px 0;
+}
+
+.patreon:hover {
+	color: #dddddd;
+}
+
+
 /* normal - color: #898d90;
    halloween - color : #f59b42;*/
 
