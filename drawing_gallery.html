@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155588364-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155588364-1');
+</script>
+
 
 	<title>Ashley Cosplays</title>
 	<meta charset="UTF-8">
@@ -58,8 +68,8 @@
 				<img src="img/menu-icon.png" alt="" class="menu-icon">
 				<ul class="main-menu">
 					<li><a href="./index.html">About me</a></li>
-          <li class="active"><a href="./cosplay_gallery.html">Cosplays Gallery</a></li>
-          <li><a href="./drawing_gallery.html">Drawing Gallery</a></li>
+          <li><a href="./cosplay_gallery.html">Cosplays Gallery</a></li>
+          <li class="active"><a href="./drawing_gallery.html">Drawing Gallery</a></li>
 					<li><a href="./contact.html">Contact</a></li>
 					<li><a href="./support.html">Donate</a></li>
 				</ul>
@@ -77,20 +87,6 @@
 
 		<!-- Page section -->
 		<div class="page-section gallery-page">
-      <ul class="portfolio-filter" id="portfolio_filter">
-        <li class="filter all active" data-filter="*">All</li>
-        <li class="filter" data-filter=".bowsette_2020">Bowsette 2020</li>
-        <li class="filter" data-filter=".yoko">Yoko Ritona</li>
-        <li class="filter" data-filter=".lucoa">Lucoa</li>
-        <li class="filter" data-filter=".tifa">Tifa Lockhart</li>
-				<li class="filter" data-filter=".dva">D.va</li>
-				<li class="filter" data-filter=".bowsette">Bowsette</li>
-				<li class="filter" data-filter=".leather">Black Leather</li>
-				<li class="filter" data-filter=".poison">Poison</li>
-				<li class="filter" data-filter=".summer_kitty">Summer Kitty</li>
-        <a class="patreon" href="https://www.patreon.com/c4ptain_fox">More on Patreon</a>
-			</ul>
-
 			<div class="portfolio-gallery" id="thegallery">
 
 
@@ -119,14 +115,11 @@
   <script>
     var highlight_on= false;
 
-    var sets = ["bowsette_2020", "yoko","lucoa", "tifa", "dva", "bowsette","leather", "poison", "summer_kitty"];
-    var setsize = [41, 30, 18, 25, 23, 13, 20, 32, 21]
-    var gallery = document.getElementById('thegallery');
-
     function highlight(e)
     {
       if(highlight_on)
       {
+        console.log("ok")
     clicked = document.getElementById(e.target.id).parentElement;
       Array.from(document.getElementsByClassName("gallery-item")).forEach(
         function(element, index, array) {
@@ -141,6 +134,7 @@
     {
       if(highlight_on)
       {
+        console.log("off")
         highlight_on=false;
         Array.from(document.getElementsByClassName("gallery-item")).forEach(
           function(element, index, array) {
@@ -179,36 +173,26 @@
       document.getElementById("overlay").style.opacity = "0";
     }
 
-    function delete_element(element)
-    {
-      element.remove();
-    }
-
-    function clear_display()
-    {
-        gallery.innerHTML = "";
-    }
-
-    function display_set(i)
-    {
-      for(j=1; j<setsize[i]+1; j++)
+      var sets = ["drawings"];
+      var setsize = [12]
+      var i=0;
+      var gallery = document.getElementById('thegallery');
+      while(sets[i])
       {
-        var imgdiv = document.createElement('div');
-        imgdiv.className="gallery-item " + sets[i];
-        var img = document.createElement('img');
-        img.src="img/" + sets[i] + "/ (" + j.toString() + ").jpg";
-        img.id=sets[i]+j.toString();
-        img.onmouseover= function() {highlight(event)};
-        img.onclick= function() {switch_light(event)};
-        imgdiv.appendChild(img);
-        gallery.appendChild(imgdiv);
+        for(j=1; j<setsize[i]+1; j++)
+        {
+          var imgdiv = document.createElement('div');
+          imgdiv.className="gallery-item " + sets[i];
+          var img = document.createElement('img');
+          img.src="img/" + sets[i] + "/ (" + j.toString() + ").png";
+          img.id=sets[i]+j.toString();
+          img.onmouseover= function() {highlight(event)};
+          img.onclick= function() {switch_light(event)};
+          imgdiv.appendChild(img);
+          gallery.appendChild(imgdiv);
+        }
+        i++;
       }
-    }
-
-    for(i=0;i<sets.length;i++)
-    {
-      display_set(i)
-    }
   </script>
 
 

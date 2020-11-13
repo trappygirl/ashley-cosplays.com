@@ -188,7 +188,7 @@ ol {
 
 .main-button-item{
 	display: block;
-	background-image: url("../img/button.png");
+	background-image: url("../img/button_halloween.png");
 	height: 67px;
 	width: 200px;
 	margin-left: auto;
@@ -198,13 +198,13 @@ ol {
 }
 
 .main-button-item:hover{
-	background-image: url("../img/button-hover.png");
+	background-image: url("../img/button-hover_halloween.png");
 }
 
 .pfp{
 	width:250px;
 	height:250px;
-	background-image: url("../img/pfp.png");
+	background-image: url("../img/pfp_halloween.png");
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -407,7 +407,7 @@ ol {
 	left: 0;
 	top: 0;
 	background: 	#181818;
-	background-image: url("../img/bg-menu.png");
+	background-image: url("../img/bg-menu_halloween.png");
 	z-index: 9999;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
@@ -439,7 +439,7 @@ ol {
 	margin-bottom: 84px;
 	height: 150px;
 	width: 350px;
-	background: url("../img/logo-test.png")
+	background: url("../img/logo-test_halloween.png")
 }
 
 .site-logo:hover {
@@ -449,7 +449,7 @@ ol {
 	margin-bottom: 84px;
 	height: 150px;
 	width: 350px;
-	background: url("../img/litup-logo-test.png")
+	background: url("../img/litup-logo-test_halloween.png")
 }
 
 .menu-icon {
@@ -474,7 +474,7 @@ ol {
 }
 
 .main-menu li.active a {
-	border-bottom: 2px solid  #ff006a;
+	border-bottom: 2px solid  #ff6b00;
 }
 /* #ff006a - normal
 	 #ff6b00 - halloween
@@ -616,9 +616,9 @@ ol {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 50px 50px 100px 50px;
-	background: url("../img/bg-menu.png");
+	background: url("../img/bg-menu_halloween.png");
 	outline-style: dashed;
-	outline-color: #ff006a;
+	outline-color: #ff6b00;
 }
 
 /* background: #fff
@@ -628,7 +628,7 @@ Halloween : #181818*/
 	font-size: 11px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #898d90;
+	color: #f59b42;
 	letter-spacing: 2px;
 }
 
@@ -639,7 +639,7 @@ Halloween : #f59b42 */
 	margin-bottom: 30px;
 	margin-left: 0px;
 	font-size: 48px;
-	color: #ff006a;
+	color: #ff6b00;
 }
 
 .slider-item .si-text-box p {
@@ -864,7 +864,7 @@ Halloween : #f59b42 */
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #ff006a;
+	color: #f59b42;
 	margin-right: 65px;
 	cursor: pointer;
 	padding: 10px 0;
@@ -875,14 +875,14 @@ Halloween : #f59b42 */
 	font-size: 14px;
 	font-weight: 800;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: #c4a8ff;
 	margin-right: 65px;
 	cursor: pointer;
 	padding: 10px 0;
 }
 
 .patreon:hover {
-	color: #898d90;;
+	color: #dddddd;
 }
 
 
@@ -899,9 +899,9 @@ Halloween : #f59b42 */
 
 .portfolio-filter li.active {
 	text-decoration: underline;
-	text-decoration-color: #ff006a;
+	text-decoration-color:  #dddddd;
 	text-decoration-thickness: 3px;
-	color: #ffffff;
+	color: #ff6b00;
 }
 
 /* normal : color: #323232;
